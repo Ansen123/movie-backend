@@ -13,13 +13,13 @@ public class MovieModel {
     @GeneratedValue
     private int id;
     private String movieName;
-    private int releasdYear;
+    private int releasedYear;
     private String language;
 
-    public MovieModel(int id, String movieName, int releasdYear, String language) {
+    public MovieModel(int id, String movieName, int releasedYear, String language) {
         this.id = id;
         this.movieName = movieName;
-        this.releasdYear = releasdYear;
+        this.releasedYear = releasedYear;
         this.language = language;
     }
 
@@ -34,8 +34,8 @@ public class MovieModel {
         return movieName;
     }
 
-    public int getReleasdYear() {
-        return releasdYear;
+    public int getReleasedYear() {
+        return releasedYear;
     }
 
     public String getLanguage() {
@@ -50,8 +50,8 @@ public class MovieModel {
         this.movieName = movieName;
     }
 
-    public void setReleasdYear(int releasdYear) {
-        this.releasdYear = releasdYear;
+    public void setReleasedYear(int releasedYear) {
+        this.releasedYear = releasedYear;
     }
 
     public void setLanguage(String language) {
